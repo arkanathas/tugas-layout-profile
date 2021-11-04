@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back2">
+
+        <ImageView
+            android:id="@+id/app_bg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_bg" />
+
+        <TextView
+            android:id="@+id/tvnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Muchammad Arkan Atha Syandana"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:background="#8FEEEEEE"/>
+
+        <TextView
+            android:id="@+id/tvJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvnama"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Music Producer"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:background="#8FEEEEEE"/>
+
+        <TextView
+            android:id="@+id/tvAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvJob"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/ic_location_on_white_24dp"
+            android:drawablePadding="8dp"
+            android:text="Indonesia"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:background="#8FEEEEEE"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:src="@drawable/profil"
+            app:civ_border_color="#000"
+            app:civ_border_width="4dp" />
+
+        <LinearLayout
+            android:id="@+id/rlStatistik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:layout_marginBottom="16dp"
+            android:background="#EEEEEE"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:id="@+id/rlLeft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/jApps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/ic_baseline_music_note_24"
+                    android:drawablePadding="@dimen/cardview_default_radius"
+                    android:text="14"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textApps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jApps"
+                    android:layout_centerHorizontal="true"
+                    android:text="Tracks"
+                    android:textColor="#616161" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCenter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/jFollowers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/ic_baseline_people_24"
+                    android:drawablePadding="@dimen/cardview_default_radius"
+                    android:text="290"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textFollowers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jFollowers"
+                    android:layout_centerHorizontal="true"
+                    android:text="Followers"
+                    android:textColor="#616161" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlRight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/jFollowing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/ic_baseline_people_outline_24"
+                    android:drawablePadding="@dimen/cardview_default_radius"
+                    android:text="119"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textFollowing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jFollowing"
+                    android:layout_centerHorizontal="true"
+                    android:text="Following"
+                    android:textColor="#616161" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rlStatistik"
+            android:background="@drawable/back">
+
+            <TextView
+                android:id="@+id/tvAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="About"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAbout"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="5dp"
+                android:text="Muchammad Arkan Atha Syandana Adalah seorang musik produser dengan alias bernama Dark Arcane dengan musik beraliran Bass House yang terinspirasi dari DJ terkenal yaitu Malaa, Matroda, Tchami, dan lainnya."
+                android:textAlignment="center"
+                android:textColor="#616161"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textAbout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/black"
+                android:text="Follow"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
